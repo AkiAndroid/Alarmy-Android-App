@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alarm_background"
+    tools:context=".MainActivity">
+
+    <TimePicker
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:headerBackground="@android:color/background_light"
+        android:padding="10dp"
+        android:timePickerMode="spinner"></TimePicker>
+
+    <TextView
+        android:id="@+id/timetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginRight="206dp"
+        android:textColor="#251029"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/repeatbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="639dp"
+        android:layout_marginBottom="33dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/repeat" />
+
+    <ImageButton
+        android:id="@+id/setbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="161dp"
+        android:background="@android:color/transparent"
+        android:onClick="setAlarm"
+        android:src="@drawable/alarmset" />
+
+    <ImageButton
+        android:id="@+id/musicbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="46dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/rngtone_selector" />
+
+    <ImageButton
+        android:id="@+id/offbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="304dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/cooltext360482626434942" />
+
+    <ImageButton
+        android:id="@+id/cancelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="163dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ImageButton
+        android:id="@+id/backbuttonalarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="702dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/abc_vector_test" />
+
+</RelativeLayout>

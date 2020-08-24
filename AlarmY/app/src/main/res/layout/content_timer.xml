@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_on_secondary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/timertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timeinput"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="102dp"
+        android:text="00:00"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="60sp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/playbuttontimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="256dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/playtimer" />
+
+    <ImageButton
+        android:id="@+id/resetbuttontimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/resettimer" />
+
+    <EditText
+        android:id="@+id/timeinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="265dp"
+        android:ems="10"
+        android:hint="Enter Number of Seconds"
+        android:inputType="number"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background" />
+
+    <ImageButton
+        android:id="@+id/setbuttontimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="331dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/alarmset" />
+
+    <ImageButton
+        android:id="@+id/backbuttontimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:layout_marginEnd="13dp"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+</RelativeLayout>
