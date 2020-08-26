@@ -96,6 +96,8 @@ TextView laptimingText;
                     sec=0;
                     min=0;
                     chronometer.setText("00:00:00");
+                    laptimingText.setText("");
+                    clickcount=0;
 
                 }
             }
