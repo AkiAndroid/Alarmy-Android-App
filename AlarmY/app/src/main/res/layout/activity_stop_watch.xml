@@ -7,6 +7,12 @@
     android:background="@drawable/stopwatchwallpaper"
     tools:context=".StopWatch">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
     <Chronometer
         android:id="@+id/chronometer"
         android:layout_width="match_parent"

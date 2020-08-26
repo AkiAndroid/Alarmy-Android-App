@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -61,6 +62,9 @@ public class Timer extends AppCompatActivity {
         setbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(!timeinput.getText().toString().matches("")){
+
+
                 setbutton.setVisibility(View.GONE);
                 timeinput.setVisibility(View.GONE);
                 playbutton.setVisibility(View.VISIBLE);
@@ -70,6 +74,10 @@ public class Timer extends AppCompatActivity {
                 getStartTimeInMilliSec=START_TIME_IN_MILLI_SEC;
                 Log.i("",""+START_TIME_IN_MILLI_SEC);
 
+            }
+                else {
+                    Toast.makeText(Timer.this, "Enter the number of seconds", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

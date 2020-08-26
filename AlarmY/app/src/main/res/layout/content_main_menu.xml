@@ -37,8 +37,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="153dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="162dp"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/stop_watch_button_image" />
 

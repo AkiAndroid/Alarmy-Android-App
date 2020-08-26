@@ -17,7 +17,7 @@ public class StopWatch extends AppCompatActivity {
  Handler handler;
  private boolean isResume;
  long tMillisec,tStart,tbuff,tupdate=0L;
- int sec,min,millisec;
+ int sec,min,millisec,clickcount;
 
 TextView laptimingText;
 
@@ -49,7 +49,12 @@ TextView laptimingText;
         lapbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                laptimingText.setText(laptimingText.getText() + "\n" + laptimingText.getText().toString().split("\n").length + ". " + chronometer.getText());
+                clickcount = clickcount + 1;
+
+                if (clickcount <= 12) {
+                    laptimingText.setText(laptimingText.getText() + "\n" + laptimingText.getText().toString().split("\n").length + ". " + chronometer.getText());
+                }
+
             }
         });
 
